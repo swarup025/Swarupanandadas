@@ -1,0 +1,723 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Swarupananda Das | IT & Cybersecurity Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Roboto+Mono:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🔒</text></svg>">
+   
+
+        <style>
+            /* SUBTLE RGB GLOW - For Elegant Buttons */
+            .rgb-glow-btn {
+            /* Your existing button styles - adjust colors to match your current button */
+            background: linear-gradient(135deg, #4285f4, #34a853); /* Google Drive colors */
+            color: white;
+            border: none;
+            padding: 12px 28px;
+            border-radius: 8px;
+            font-size: 16px;
+            font-weight: 500;
+            cursor: pointer;
+            position: relative;
+            overflow: hidden;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+            
+            /* Your existing button text */
+            font-family: 'Segoe UI', Arial, sans-serif;
+            letter-spacing: 0.3px;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            }
+
+            /* Soft RGB Glow Effect */
+            .rgb-glow-btn::before {
+            content: '';
+            position: absolute;
+            top: -2px;
+            left: -2px;
+            right: -2px;
+            bottom: -2px;
+            background: linear-gradient(
+                45deg,
+                rgba(66, 133, 244, 0.8),    /* Soft blue */
+                rgba(234, 67, 53, 0.6),     /* Soft red */
+                rgba(251, 188, 5, 0.6),     /* Soft yellow */
+                rgba(52, 168, 83, 0.8),     /* Soft green */
+                rgba(66, 133, 244, 0.8)     /* Back to soft blue */
+            );
+            background-size: 300% 300%;
+            z-index: -1;
+            border-radius: 10px;
+            animation: soft-rgb-glow 12s ease infinite; /* Much slower */
+            opacity: 0.7; /* Subtle glow */
+            filter: blur(4px); /* Softer edges */
+            }
+
+            /* Inner content wrapper */
+            .rgb-glow-btn .btn-content {
+            position: relative;
+            z-index: 2;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            }
+
+            /* Hover effect - slightly brighter */
+            .rgb-glow-btn:hover::before {
+            opacity: 0.9;
+            animation-duration: 8s; /* Slightly faster on hover */
+            }
+
+            .rgb-glow-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+            }
+
+            /* Active/Click effect */
+            .rgb-glow-btn:active {
+            transform: translateY(0);
+            }
+
+            /* Very slow, smooth color transition */
+            @keyframes soft-rgb-glow {
+            0%, 100% {
+                background-position: 0% 50%;
+                opacity: 0.6;
+            }
+            25% {
+                background-position: 50% 100%;
+                opacity: 0.7;
+            }
+            50% {
+                background-position: 100% 50%;
+                opacity: 0.6;
+            }
+            75% {
+                background-position: 50% 0%;
+                opacity: 0.7;
+            }
+            }
+
+            /* Alternative: Even subtler border-only animation */
+            .rgb-border-btn {
+            background: linear-gradient(135deg, #4285f4, #34a853);
+            color: white;
+            border: 2px solid transparent;
+            padding: 10px 26px;
+            border-radius: 8px;
+            position: relative;
+            }
+
+            .rgb-border-btn::before {
+            content: '';
+            position: absolute;
+            top: -4px;
+            left: -4px;
+            right: -4px;
+            bottom: -4px;
+            background: linear-gradient(
+                45deg,
+                rgba(66, 133, 244, 0.5),
+                rgba(234, 67, 53, 0.3),
+                rgba(251, 188, 5, 0.3),
+                rgba(52, 168, 83, 0.5)
+            );
+            background-size: 400% 400%;
+            z-index: -1;
+            border-radius: 10px;
+            animation: border-glow 15s ease infinite;
+            opacity: 0.5;
+            }
+
+            @keyframes border-glow {
+            0%, 100% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            }
+
+            /* Pulse effect (optional) */
+            @keyframes gentle-pulse {
+            0%, 100% { box-shadow: 0 0 10px rgba(66, 133, 244, 0.3); }
+            50% { box-shadow: 0 0 20px rgba(52, 168, 83, 0.4); }
+            }
+
+            .pulse-glow {
+            animation: gentle-pulse 3s infinite;
+            }
+        </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav id="navbar">
+        <div class="container nav-container">
+            <a href="#home" class="logo">Swarupananda <span>Das</span></a>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#certifications" class="nav-link">Certifications</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home" class="section home-section">
+        <div class="container home-container">
+            <div class="home-text">
+                <h1 class="home-title">Hello, I'm <span class="highlight">Swarupananda Das</span></h1>
+                <div class="role-container">
+                    <div class="role-text">
+                        <span class="static-text">I'm a</span>
+                        <span class="dynamic-text">
+                            <span class="role-typing"></span>
+                            <span class="cursor">|</span>
+                        </span>
+                    </div>
+                </div>
+                <p class="home-desc">
+                    Detail-oriented IT and cybersecurity graduate with knowledge of networking and security fundamentals. 
+                    Actively seeking entry-level IT or SOC opportunities to learn, contribute, and grow professionally.
+                </p>
+                
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/swarupananda-das-9552a82b0/" class="social-link" aria-label="LinkedIn">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="https://www.instagram.com/swarup_025/" class="social-link" aria-label="Instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="https://github.com/swarup025" class="social-link" aria-label="Twitter">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="https://github.com/swarup025" class="social-link" aria-label="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </div>
+                
+                <a href="https://drive.google.com/file/d/1wsFTUGZkkgNkW2-hw8mbw97-t7xXahrd/view?usp=sharing" class="btn btn-primary" id="download-cv">
+                    <i class="fas fa-download"></i> Download CV
+                </a>
+            </div>
+            
+            <div class="profile-container">
+                <div class="profile-image">
+                    <div class="image-wrapper">
+                        <div class="image-placeholder">
+                            <img src="./swarup-photoaidcom-cropped.jpeg" alt="Profile photo" width="340" height="340">
+
+                        </div>
+                    </div>
+                    <div class="floating-shape shape-1"></div>
+                    <div class="floating-shape shape-2"></div>
+                    <div class="floating-shape shape-3"></div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="scroll-down">
+            <a href="#about" aria-label="Scroll to about section">
+                <i class="fas fa-chevron-down"></i>
+            </a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section about-section">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            
+            <!-- ADDED: Professional Summary -->
+            <div class="about-summary fade-up">
+                <p class="summary-text">
+                    Aspiring IT professional and SOC Analyst (Level 1) with a strong interest in cybersecurity and IT operations.
+                    Continuously learning modern tools, technologies, and security practices to stay industry-ready.
+                    Seeking an entry-level IT or SOC role to gain hands-on experience, grow professionally, and contribute to organizational security.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section - ADDED -->
+    <section id="education" class="section education-section">
+        <div class="container">
+            <h2 class="section-title">Education</h2>
+            
+            <div class="education-container">
+                <!-- Graduation Card -->
+                <div class="education-card fade-up">
+                    <div class="education-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <h3 class="education-title">Graduation</h3>
+                    <div class="education-details">
+                        <p class="education-item"><strong>Degree:</strong> B.Sc. in Computer Science</p>
+                        <p class="education-item"><strong>University:</strong> University of Calcutta</p>
+                        <p class="education-item"><strong>Duration:</strong> 2020 – 2023</p>
+                        <p class="education-item"><strong>CGPA:</strong> 6.76</p>
+                    </div>
+                </div>
+                
+                <!-- Post Graduation Card -->
+                <div class="education-card fade-up">
+                    <div class="education-icon">
+                        <i class="fas fa-university"></i>
+                    </div>
+                    <h3 class="education-title">Post Graduation</h3>
+                    <div class="education-details">
+                        <p class="education-item"><strong>Degree:</strong> MCA (Master of Computer Applications)</p>
+                        <p class="education-item"><strong>University:</strong> Maulana Abul Kalam Azad University</p>
+                        <p class="education-item"><strong>Duration:</strong> 2024 – 2026</p>
+                        <p class="education-item"><strong>CGPA:</strong> 8.18</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Internship Section -->
+    <section id="about" class="section about-section">
+        <div class="container">
+            <h2 class="section-title">Internship Experience</h2>
+            <div class="about-content">
+                <div class="about-card fade-up">
+                    <div class="about-icon">
+                        <i class="fas fa-building"></i>
+                    </div>
+                    <h3>National Stock Exchange Internship</h3>
+                    <p>Completed an internship at the National Stock Exchange of India, gaining exposure to operational and technical processes.</p>
+                    <a href="https://drive.google.com/file/d/1QwPIT9LRWJnNUbtCrImMsh3H67JWxY0O/view?usp=sharing" class="btn btn-small view-cert-btn">
+                        <i class="fas fa-certificate"></i> View Certificate
+                    </a>
+                </div>
+                <div class="about-card fade-up">
+                    <div class="about-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>Amroha Police Department Internship</h3>
+                    <p>Completed a cybersecurity internship with the Amroha Police Department, focusing on security awareness and practical investigations.</p>
+                    <a href="https://drive.google.com/file/d/1Vwc1HV2c4ZEhIItZkQdF1AlObCIqxsfS/view?usp=sharing" class="btn btn-small view-cert-btn">
+                        <i class="fas fa-certificate"></i> View Certificate
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section skills-section">
+        <div class="container">
+            <h2 class="section-title">Skills</h2>
+            <div class="skills-container">
+                <div class="skill-card" data-skill="SIEM">
+                    <div class="skill-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <span class="skill-name">SIEM</span>
+                </div>
+                <div class="skill-card" data-skill="Log Analysis">
+                    <div class="skill-icon">
+                        <i class="fas fa-search"></i>
+                    </div>
+                    <span class="skill-name">Log Analysis</span>
+                </div>
+                <div class="skill-card" data-skill="Networking">
+                    <div class="skill-icon">
+                        <i class="fas fa-network-wired"></i>
+                    </div>
+                    <span class="skill-name">Networking</span>
+                </div>
+                <div class="skill-card" data-skill="Splunk">
+                    <div class="skill-icon">
+                        <i class="fas fa-chart-bar"></i>
+                    </div>
+                    <span class="skill-name">Splunk</span>
+                </div>
+                <div class="skill-card" data-skill="Firewall Logs">
+                    <div class="skill-icon">
+                        <i class="fas fa-fire"></i>
+                    </div>
+                    <span class="skill-name">Firewall Logs</span>
+                </div>
+                <div class="skill-card" data-skill="Windows">
+                    <div class="skill-icon">
+                        <i class="fab fa-windows"></i>
+                    </div>
+                    <span class="skill-name">Windows</span>
+                </div>
+                <div class="skill-card" data-skill="Linux">
+                    <div class="skill-icon">
+                        <i class="fab fa-linux"></i>
+                    </div>
+                    <span class="skill-name">Linux</span>
+                </div>
+                <div class="skill-card" data-skill="Python">
+                    <div class="skill-icon">
+                        <i class="fab fa-python"></i>
+                    </div>
+                    <span class="skill-name">Python</span>
+                </div>
+                <div class="skill-card" data-skill="SQL">
+                    <div class="skill-icon">
+                        <i class="fas fa-database"></i>
+                    </div>
+                    <span class="skill-name">SQL</span>
+                </div>
+                <div class="skill-card" data-skill="Threat Hunting">
+                    <div class="skill-icon">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                    <span class="skill-name">Threat Hunting</span>
+                </div>
+                <div class="skill-card" data-skill="Incident Response">
+                    <div class="skill-icon">
+                        <i class="fas fa-first-aid"></i>
+                    </div>
+                    <span class="skill-name">Incident Response</span>
+                </div>
+                <div class="skill-card" data-skill="Vulnerability Assessment">
+                    <div class="skill-icon">
+                        <i class="fas fa-shield-virus"></i>
+                    </div>
+                    <span class="skill-name">Vulnerability Assessment</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section projects-section">
+        <div class="container">
+            <h2 class="section-title">Projects</h2>
+            <p class="section-subtitle">Featured Projects</p>
+            <p class="projects-intro">
+                I have worked on multiple academic and self-learning projects focused on IT, networking, and cybersecurity. 
+                Below are some of my key projects demonstrating hands-on skills and practical understanding.
+            </p>
+            
+            <div class="projects-container">
+                <div class="project-card fade-up">
+                    <div class="project-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3 class="project-title">IDS Log Analysis, Monitoring & Visualization Using Splunk</h3>
+                    <p class="project-description">Analyzed IDS logs using Splunk to detect security threats and suspicious activities. Created dashboards for real-time monitoring and incident analysis.</p>
+                    <div class="project-tags">
+                        <span class="project-tag">Threat Detection</span>
+                        <span class="project-tag">IDS Log Analysis</span>
+                        <span class="project-tag">SIEM (Splunk)</span>
+                        <span class="project-tag">Dashboard Visualization</span>
+                    </div>
+                    <a href="https://github.com/swarup025/splunk-ids-log-analysis" class="btn btn-small github-btn" target="_blank">
+                        <i class="fab fa-github"></i> View GitHub Repo
+                    </a>
+                </div>
+                
+                <div class="project-card fade-up">
+                    <div class="project-icon">
+                        <i class="fas fa-network-wired"></i>
+                    </div>
+                    <h3 class="project-title">Network Security Monitoring through Firewall Log Analysis</h3>
+                    <p class="project-description">Analyzed firewall logs to detect threats, triage security alerts, and build dashboards for real-time network monitoring.</p>
+                    <div class="project-tags">
+                        <span class="project-tag">Alert Triage</span>
+                        <span class="project-tag">Incident Detection</span>
+                        <span class="project-tag">Firewall Log Analysis</span>
+                        <span class="project-tag">Traffic Analysis</span>
+                    </div>
+                    <a href="https://github.com/swarup025/network-security-monitoring-firewall" class="btn btn-small github-btn" target="_blank">
+                        <i class="fab fa-github"></i> View GitHub Repo
+                    </a>
+                </div>
+                
+                <div class="project-card fade-up">
+                    <div class="project-icon">
+                        <i class="fab fa-python"></i>
+                    </div>
+                    <h3 class="project-title">Soccer-field-detection-using-Hough-line-detection</h3>
+                    <p class="project-description">Implemented Hough Line Detection to identify soccer field lines and boundaries from images.</p>
+                    <div class="project-tags">
+                        <span class="project-tag">Python</span>
+                        <span class="project-tag">Hough Line Transform</span>
+                        <span class="project-tag">Computer Vision</span>
+                        <span class="project-tag">OpenCv</span>
+                        <span class="project-tag">Image Segmentation</span>
+                    </div>
+                    <a href="https://github.com/swarup025/Soccer-field-detection-using-Hough-line-detection" class="btn btn-small github-btn" target="_blank">
+                        <i class="fab fa-github"></i> View GitHub Repo
+                    </a>
+                </div>
+            </div>
+            
+            <div class="view-all-projects">
+                <a href="https://github.com/swarup025" class="btn btn-secondary" id="view-all-projects" target="_blank">
+                    <i class="fab fa-github"></i> View All Projects on GitHub
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certifications Section -->
+    <section id="certifications" class="section certifications-section">
+        <div class="container">
+            <h2 class="section-title">Certifications</h2>
+            
+            <div class="certifications-container">
+                <div class="cert-card fade-up">
+                    <div class="cert-icon">
+                        <i class="fab fa-google"></i>
+                    </div>
+                    <h3 class="cert-title" data-link="#">Google Cybersecurity Professional Certificate</h3>
+                    <p>Comprehensive training in cybersecurity fundamentals, tools, and best practices.</p>
+                    <a href="#" class="cert-link">
+                        <i class="fas fa-external-link-alt"></i> View Certificate
+                    </a>
+                </div>
+                
+                <div class="cert-card fade-up">
+                    <div class="cert-icon">
+                        <i class="fas fa-network-wired"></i>
+                    </div>
+                    <h3 class="cert-title" data-link="#">Networking Basics – Cisco Networking Academy</h3>
+                    <p>Fundamental networking concepts, protocols, and infrastructure knowledge.</p>
+                    <a href="#" class="cert-link">
+                        <i class="fas fa-external-link-alt"></i> View Certificate
+                    </a>
+                </div>
+                
+                <div class="cert-card fade-up">
+                    <div class="cert-icon">
+                        <i class="fas fa-user-secret"></i>
+                    </div>
+                    <h3 class="cert-title" data-link="#">Ethical Hacking / Network Security (Udemy)</h3>
+                    <p>Practical knowledge of ethical hacking methodologies and network security techniques.</p>
+                    <a href="#" class="cert-link">
+                        <i class="fas fa-external-link-alt"></i> View Certificate
+                    </a>
+                </div>
+            </div>
+            
+            <div class="view-certificates">
+                <a href="https://drive.google.com/drive/folders/1UNfnWn9HHc0plih-8qUqGjb75Os8p8fx?usp=sharing" class="btn btn-primary google-drive-btn">
+                    <i class="fab fa-google-drive"></i> View All Certificates (Google Drive)
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section contact-section">
+    <div class="container">
+        <h2 class="section-title">Contact</h2>
+        <p class="contact-subtitle">Feel free to reach out for opportunities or collaboration</p>
+        
+        <div class="contact-container">
+            <a href="mailto:mcaswarup2001@gmail.com" class="contact-card">
+
+                <div class="contact-icon">
+                    <i class="fas fa-envelope"></i>
+                </div>
+                <h3>Email Me</h3>
+            </a>
+            
+            <a href="https://www.linkedin.com/in/swarupananda-das-9552a82b0/" class="contact-card" target="_blank">
+                <div class="contact-icon">
+                    <i class="fab fa-linkedin"></i>
+                </div>
+                <h3>LinkedIn</h3>
+            </a>
+            
+            <a href="https://www.instagram.com/swarup_025/" class="contact-card" target="_blank">
+                <div class="contact-icon">
+                    <i class="fab fa-instagram"></i>
+                </div>
+                <h3>Instagram</h3>
+            </a>
+            
+            <a href="https://drive.google.com/file/d/1x4VWyJi4KH0ZebnMfLEJbkrEB-zKcbFT/view?usp=sharing" 
+               class="contact-card" target="_blank">
+                <div class="contact-icon">
+                    <i class="fas fa-download"></i>
+                </div>
+                <h3>Download Resume</h3>
+            </a>
+        </div>
+    </div>
+</section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>© 2023 Swarupananda Das. All rights reserved.</p>
+            <p>Designed for IT, SOC Analyst, and Cybersecurity roles</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+
+            <script>
+        // SUBTLE RGB GLOW for all buttons
+        document.addEventListener('DOMContentLoaded', function() {
+        
+        // Function to add subtle RGB glow
+        function addSubtleRGBGlow(element) {
+            // Skip if already processed or too small
+            if (element.classList.contains('rgb-processed') || 
+                element.offsetWidth < 50 || 
+                element.offsetHeight < 10) {
+            return;
+            }
+            
+            // Preserve original classes
+            const originalClasses = element.className;
+            
+            // Choose animation type based on button content
+            const text = element.textContent.toLowerCase();
+            
+            // For certificate buttons - keep Google Drive colors
+            if (text.includes('certificate') || text.includes('certificates')) {
+            element.classList.add('rgb-glow-btn');
+            element.style.background = 'linear-gradient(135deg, #4285f4, #34a853)';
+            } 
+            // For download buttons
+            else if (text.includes('download') || text.includes('cv') || text.includes('resume')) {
+            element.classList.add('rgb-glow-btn');
+            element.style.background = 'linear-gradient(135deg, #6a11cb, #2575fc)';
+            }
+            // For GitHub buttons
+            else if (text.includes('github') || text.includes('repo') || text.includes('code')) {
+            element.classList.add('rgb-glow-btn');
+            element.style.background = 'linear-gradient(135deg, #24292e, #444d56)';
+            }
+            // For contact/email buttons
+            else if (text.includes('contact') || text.includes('hire') || text.includes('email')) {
+            element.classList.add('rgb-glow-btn');
+            element.style.background = 'linear-gradient(135deg, #667eea, #764ba2)';
+            }
+            // Default - nice gradient
+            else {
+            element.classList.add('rgb-glow-btn');
+            element.style.background = 'linear-gradient(135deg, #667eea, #764ba2)';
+            }
+            
+            // Wrap content if not already wrapped
+            if (!element.querySelector('.btn-content')) {
+            const contentDiv = document.createElement('div');
+            contentDiv.className = 'btn-content';
+            
+            // Move all child nodes to contentDiv
+            while (element.firstChild) {
+                contentDiv.appendChild(element.firstChild);
+            }
+            element.appendChild(contentDiv);
+            }
+            
+            // Add icon based on button type
+            addButtonIcon(element, text);
+            
+            // Add click effect
+            element.addEventListener('click', function(e) {
+            // Subtle click effect
+            this.style.transform = 'scale(0.98)';
+            setTimeout(() => {
+                this.style.transform = '';
+            }, 150);
+            });
+            
+            // Mark as processed
+            element.classList.add('rgb-processed');
+        }
+        
+        // Function to add appropriate icon
+        function addButtonIcon(button, text) {
+            const content = button.querySelector('.btn-content');
+            if (!content) return;
+            
+            let icon = '';
+            
+            if (text.includes('certificate')) {
+            icon = '📜';
+            } else if (text.includes('download')) {
+            icon = '';
+            } else if (text.includes('github')) {
+            icon = '🐱';
+            } else if (text.includes('contact') || text.includes('email')) {
+            icon = '✉️';
+            } else if (text.includes('view') || text.includes('see')) {
+            icon = '👁️';
+            }
+            
+            // Add icon if not already present
+            if (icon && !content.textContent.includes(icon)) {
+            content.innerHTML = icon + ' ' + content.innerHTML;
+            }
+        }
+        
+        // Apply to all buttons on page
+        const allButtons = document.querySelectorAll(
+            'button, a.btn, a.button, input[type="submit"], input[type="button"], [class*="btn"], [class*="button"]'
+        );
+        
+        // Apply with delay for smoother loading
+        setTimeout(() => {
+            allButtons.forEach(btn => {
+            // Only apply to visible, decent-sized buttons
+            if (btn.offsetParent !== null && // Visible
+                btn.offsetWidth >= 60 && 
+                btn.offsetHeight >= 30) {
+                addSubtleRGBGlow(btn);
+            }
+            });
+            
+            console.log(`🎨 Applied subtle RGB glow to ${allButtons.length} buttons`);
+        }, 100);
+        
+        // Watch for dynamically added buttons (for SPAs)
+        const observer = new MutationObserver((mutations) => {
+            mutations.forEach((mutation) => {
+            mutation.addedNodes.forEach((node) => {
+                if (node.nodeType === 1) { // Element node
+                // Check the node itself
+                if (node.matches && node.matches('button, .btn, .button')) {
+                    setTimeout(() => addSubtleRGBGlow(node), 50);
+                }
+                // Check children of the node
+                const buttons = node.querySelectorAll 
+                    ? node.querySelectorAll('button, .btn, .button') 
+                    : [];
+                buttons.forEach(btn => {
+                    setTimeout(() => addSubtleRGBGlow(btn), 50);
+                });
+                }
+            });
+            });
+        });
+        
+        // Start observing
+        observer.observe(document.body, {
+            childList: true,
+            subtree: true
+        });
+        
+        // Optional: Add a toggle for testing
+        
+        });
+        </script>
+
+
+
+</body>
+</html>
