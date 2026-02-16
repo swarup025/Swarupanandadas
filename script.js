@@ -221,7 +221,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 "mailto:mcaswarup2001@gmail.com", // Email
                 "https://www.linkedin.com/in/swarupananda-das-9552a82b0/", // LinkedIn
                 "https://www.instagram.com/swarup_025/", // Instagram
-                "https://drive.google.com/file/d/1x4VWyJi4KH0ZebnMfLEJbkrEB-zKcbFT/view?usp=sharing" // Resume
+                "https://drive.google.com/file/d/12nHEqyMFHjY0YfZ5H9tV4ABuPeR0buNA/view?usp=sharing" // Resume
             ];
             
             const currentUrl = urls[index];
@@ -371,4 +371,5 @@ document.addEventListener('DOMContentLoaded', function() {
     }, 100);
 
     
+
 });
