@@ -134,7 +134,7 @@ document.addEventListener('DOMContentLoaded', function() {
     downloadBtn.addEventListener('click', function(e) {
         e.preventDefault();
         //alert('CV download would start here. Replace with actual CV link.');
-        window.open('https://drive.google.com/file/d/12nHEqyMFHjY0YfZ5H9tV4ABuPeR0buNA/view?usp=sharing', '_blank');
+        window.open('https://drive.google.com/file/d/1g8tUFcRvNh3vGCjF2A5GnICStyXxROSl/view?usp=sharing', '_blank');
     });
     
     // About Section Certificate Buttons
@@ -221,7 +221,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 "mailto:mcaswarup2001@gmail.com", // Email
                 "https://www.linkedin.com/in/swarupananda-das-9552a82b0/", // LinkedIn
                 "https://www.instagram.com/swarup_025/", // Instagram
-                "https://drive.google.com/file/d/12nHEqyMFHjY0YfZ5H9tV4ABuPeR0buNA/view?usp=sharing" // Resume
+                "https://drive.google.com/file/d/1g8tUFcRvNh3vGCjF2A5GnICStyXxROSl/view?usp=sharing" // Resume
             ];
             
             const currentUrl = urls[index];
